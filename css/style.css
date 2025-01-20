@@ -367,55 +367,106 @@ header .follow a:hover{
     padding-top: .5rem;
 }
 
-.experience .box-container{
+.experience .box-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem; /* Add some gap between boxes */
 }
 
-.experience .box-container .box{
+.experience .box-container .box {
     position: relative;
-    flex:1 1 33rem;
     border-left: .2rem solid var(--main-color);
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;    
+    padding: 2rem;
+    flex: 0 1 auto; /* Adjust size based on content */
 }
 
-.experience .box-container .box::before{
+.experience .box-container .box::before {
     content: '';
     position: absolute;
-    top:0; left:-1rem;
-    height:2rem;
-    width:2rem;
+    top: 0;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
     border-radius: 50%;
-    background:var(--main-color);
+    background: var(--main-color);
 }
 
-.experience .box-container .box .content{
-    background:#fff;
-    padding:1.5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+.experience .box-container .box .content {
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
 }
 
-.experience .box-container .box .content span{
-    color:#fff;
+.experience .box-container .box .content span {
+    color: #fff;
     font-size: 1.7rem;
-    background:var(--main-color);
+    background: var(--main-color);
     border-radius: 50rem;
-    padding:.4rem 1rem;
+    padding: .4rem 1rem;
 }
 
-.experience .box-container .box .content h3{
+.experience .box-container .box .content h3 {
     font-size: 2.5rem;
-    padding:.5rem 0;
-    color:#111;
+    padding: .5rem 0;
+    color: #111;
 }
 
-.experience .box-container .box .content p{
+.experience .box-container .box .content p {
     font-size: 1.5rem;
-    color:#666;
+    color: #666;
 }
+
+.education .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Add some gap between boxes */
+}
+
+.education .box-container .box {
+    position: relative;
+    border-left: .2rem solid var(--main-color);
+    padding: 2rem;
+    flex: 0 1 auto; /* Adjust size based on content */
+}
+
+.education .box-container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+
+.education .box-container .box .content {
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+
+.education .box-container .box .content span {
+    color: #fff;
+    font-size: 1.7rem;
+    background: var(--main-color);
+    border-radius: 50rem;
+    padding: .4rem 1rem;
+}
+
+.education .box-container .box .content h3 {
+    font-size: 2.5rem;
+    padding: .5rem 0;
+    color: #111;
+}
+
+.education .box-container .box .content p {
+    font-size: 1.5rem;
+    color: #666;
+}
+
 
 .portfolio .box-container{
     display: flex;
