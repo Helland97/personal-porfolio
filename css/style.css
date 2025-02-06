@@ -230,7 +230,7 @@ header .follow a:hover{
 
 .about .row-1 .content p{
     color:#666;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     padding:.5rem 0;
 }
 
@@ -620,6 +620,14 @@ header .follow a:hover{
     margin-top: 0;
     margin-bottom: 1.5rem;
 }
+
+.contact .box img {
+    width: 100%; /* Adjust width to fit the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures no extra spacing */
+    margin: 0 auto; /* Centers the image */
+}
+
 
 .footer{
     margin-top: 2rem;
